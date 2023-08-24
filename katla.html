@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/katla.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/min.js"></script>
+    <script src="js/my_custom.js"></script>
+    <title>Katla Form Online</title>
+    <script>
+        $(function () {
+            $("#header").load("header.php");
+            $("#footer").load("footer.php");
+        });
+    </script>
+</head>
+
+<body>
+    <container class="container">
+        <div id="header" class="header">
+        </div>
+        <div class="ads"></div>
+        <div class="tool_area">
+            <div class="tool_head">
+                <h2>ਕਾਟਲਾ ਫਾਰਮ (MAKE KATLA ONLINE)</h2>
+            </div>
+            <div class="tool">
+                <div>
+                    <label class="label">Date of Purchase</label>
+                    <input type="date" id="Place_1" class="Input_field" placeholder="Date">
+                </div>
+                <div>
+                    <label class="label">Name of Arthiya</label>
+                    <input type="text" id="Place_2" class="Input_field" placeholder="Arthiya Name">
+                </div>
+                <div>
+                    <label class="label">Dana Mandi</label>
+                    <input type="text" id="Place_3" class="Input_field" placeholder="Dana Mandi">
+                </div>
+                <div>
+                    <label class="label">Bill no.</label>
+                    <input type="text" id="Place_4" class="Input_field" placeholder="Bill no.">
+                </div>
+                <div>
+                    <label class="label">Serial no.</label>
+                    <input type="text" id="Place_5" class="Input_field" placeholder="Serial no.">
+                </div>
+                <div>
+                    <label class="label">Crop type</label>
+                    <select id="crop" class="Input_field">
+                        <option value="--Select crop type--">--Select crop type---</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Paddy">Paddy</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label">No. of bags</label>
+                    <input type="text" id="Place_6" class="Input_field" placeholder="No. of Bags">
+                </div>
+                <div>
+                    <label class="label">Despatching Station</label>
+                    <input type="text" id="Place_7" class="Input_field" placeholder="Despatching Station">
+                </div>
+                <div>
+                    <label class="label">Destination Station</label>
+                    <input type="text" id="Place_8" class="Input_field" placeholder="Destination Station">
+                </div>
+                <div>
+                    <label class="label">Agency name</label>
+                    <input type="text" id="Place_9" class="Input_field" placeholder="Agency Name" value="FCI">
+                </div>
+                <div>
+                    <label class="label">Net Weight of Bag</label>
+                    <input type="text" id="Place_10" class="Input_field" placeholder="Net Weight of Bag" value="50Kg">
+                </div>
+                <div>
+                    <label class="label">Gross Weight of Bag</label>
+                    <input type="text" id="Place_11" class="Input_field" placeholder="Gross Weight of Bag"
+                        value="50.580Kg">
+                </div>
+                <div>
+                    <label class="label">Variety</label>
+                    <input type="text" id="Place_12" class="Input_field" placeholder="Variety" value="A-Grade">
+                </div>
+                <div>
+                    <label class="label">Condition of Bags</label>
+                    <input type="text" id="Place_13" class="Input_field" placeholder="Condition of Bags" value="Good">
+                </div>
+                <div class="check_button">
+                    <input type="checkbox" onchange="myFunction()" id="check" class="check">I am fully authorize that the above mentioned details are true
+                    and correct as per my knowledge. I acknowledge that I am agreed with the terms and
+                    conditions.</input>
+                </div>
+                <div>
+                    <button class="preview_button" id="preview_button" disabled>Preview</button>
+                </div>
+            </div>
+        </div>
+        <div class="explain">
+            <h1>How to make katla online</h1>
+            <h2> Make FCI Katla Online</h2>
+            <p>1. FCI has made it mendatory to get KATLA FORM from arthiyas.</br></br>
+               2. It has being noticed since too long that our arthiyas have to suffer a lot in making KATLA FORM.</br></br>
+               3. It's our kindness that we are providing a facility to make it online through our website in order to save time.</br></br>
+               4. It should be noticed that the FCI has no control over this website.</br></br>
+               5. Moreover, The FCI hasn't granted any facilitation to prepare KATLA FORM on online basis.</br></br>
+               6. It should be focussed on the fact that if the FOOD CORPORATION OF INDIA (FCI) would have any kind of objection regarding this online KATLA generation. We have to disable this facility.</br></br>
+               7. Hence, This KATLA generation is just to save time of arthiyas. Be sure to contact the agency if this FORM is workable for the agency or not.</br></br>
+
+             </p>
+
+        </div>
+        <div class="blank"></div>
+        <div id="footer" class="footer">
+        </div>
+    </container>
+</body>
+<script>
+    document. getElementById("preview_button"). onclick = function () {
+         location. href = "nothing.html";
+         };
+    var checkbox = document.getElementById("check");
+
+function myFunction() {
+    if (checkbox.checked == true) {
+        document.getElementById("preview_button").disabled = false;
+    } 
+    else {
+        document.getElementById("preview_button").disabled= true;
+    }
+}
+</script>
+<script src="js/my_custom.js"></script>
+
+</html>
