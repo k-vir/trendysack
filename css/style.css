@@ -25,10 +25,10 @@ body {
         ". logo buttons_Head search ."
 }
 
-.logo{
+.logo {
     grid-area: logo;
     height: 100%;
-} 
+}
 
 .logo img {
     height: 100%;
@@ -36,7 +36,7 @@ body {
     margin-left: 15%;
 }
 
-.buttons_Head{
+.buttons_Head {
     grid-area: buttons_Head;
     height: 50%;
     margin-top: 5%;
@@ -44,13 +44,13 @@ body {
     align-items: center;
 }
 
-.buttons_Head button{
+.buttons_Head button {
     border: none;
     background: transparent;
 
 }
 
-.buttons_Head button a{
+.buttons_Head button a {
     color: forestgreen;
     font-size: 130%;
     text-decoration: none;
@@ -73,6 +73,7 @@ body {
     border: none;
     background: transparent;
 }
+
 .Search_box label:focus .Search_box {
     width: 80%;
     visibility: visible;
@@ -148,8 +149,9 @@ body {
     width: 32%;
     margin: .2%;
 }
-.product:hover .image img{
-    height:105%;
+
+.product:hover .image img {
+    height: 105%;
     width: 105%;
     margin: -2%;
 }
@@ -161,6 +163,7 @@ body {
     overflow: hidden;
     position: relative;
 }
+
 .image img {
     height: 100%;
     width: 100%;
@@ -194,25 +197,25 @@ body {
     height: 90%;
     grid-template-columns: 50% auto;
     grid-template-areas:
-    "site_btns Social"
-    
+        "site_btns Social"
+
 }
 
-.site_btns{
+.site_btns {
     grid-area: site_btns;
     display: flex;
     height: 100%;
     margin: -3% 0 0 0;
 }
 
-.Social{
+.Social {
     grid-area: Social;
     display: flex;
     height: 100%;
     margin: -3% 0 0 0;
 }
 
-#buttons_footer{
+#buttons_footer {
     height: 50%;
     margin-top: 5%;
     display: flex;
@@ -221,15 +224,24 @@ body {
     background-color: aliceblue;
 }
 
-#buttons_footer button{
+#buttons_footer button {
     border: none;
     background: transparent;
     border: 1px dashed forestgreen;
 
 }
 
-#buttons_footer button a{
+#buttons_footer button a {
     color: forestgreen;
     font-size: 200%;
     text-decoration: none;
+}
+
+.product_btn {
+    font-size: larger;
+    background-color: forestgreen;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
