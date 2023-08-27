@@ -147,7 +147,7 @@ body {
 .product {
     height: 52%;
     width: 32%;
-    margin: .2%;
+    margin: 1.5% 0;
 }
 
 .product:hover .image img {
