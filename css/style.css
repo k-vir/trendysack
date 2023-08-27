@@ -190,6 +190,15 @@ body {
     overflow: hidden;
 }
 
+.product_btn {
+    font-size: larger;
+    background-color: forestgreen;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
 .footer {
     grid-area: footer;
     border-top: 1px solid forestgreen;
@@ -216,12 +225,13 @@ body {
 }
 
 #buttons_footer {
-    height: 50%;
-    margin-top: 5%;
+    height: 70%;
+    margin-top: 4%;
     display: flex;
     align-items: center;
     border: none;
     background-color: aliceblue;
+    border-radius: 20px;
 }
 
 #buttons_footer button {
@@ -231,17 +241,252 @@ body {
 
 }
 
-#buttons_footer button a {
+#buttons_footer  a {
     color: forestgreen;
-    font-size: 200%;
+    font-size: 150%;
     text-decoration: none;
+    width: 200px;
+    height: 30px;
 }
 
-.product_btn {
-    font-size: larger;
-    background-color: forestgreen;
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
+
+@media only screen and (max-width: 970px) {
+    /* body {
+      background-color: lightblue;
+    } */
+
+    .grid {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 10% auto 100px;
+        grid-template-areas:
+            "header"
+            "container"
+            "footer";
+    }
+
+    .logo {
+        grid-area: logo;
+        height: 100%;
+    }
+    
+    .logo img {
+        height: 100%;
+        width: 55%;
+        margin-left: 15%;
+    }
+    
+    .buttons_Head {
+        grid-area: buttons_Head;
+        height: 50%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .buttons_Head button {
+        border: none;
+        background: transparent;
+    
+    }
+    
+    .buttons_Head button a {
+        color: forestgreen;
+        font-size: 130%;
+        text-decoration: none;
+    }
+    
+    .Search {
+        grid-area: search;
+        height: 50%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        border: 1px solid forestgreen;
+        border-radius: 10px;
+    
+    }
+    
+    .Search_box {
+        height: 100%;
+        width: 80%;
+        border: none;
+        background: transparent;
+    }
+    
+    .Search_box label:focus .Search_box {
+        width: 80%;
+        visibility: visible;
+        transition: all .05s;
+    
+    }
+    
+    .Search label {
+        background-color: forestgreen;
+        color: white;
+        text-align: center;
+        font-size: large;
+        width: 20%;
+        height: 80%;
+        border-radius: 10px;
+        padding-top: 3%;
+    
+    }
+    
+    .container {
+        grid-area: container;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1% auto 1%;
+        grid-template-areas:
+            "left_sidebar data right_sidebar"
+    }
+    
+    .left_sidebar {
+        grid-area: left_sidebar;
+    
+    }
+    
+    .right_sidebar {
+        grid-area: right_sidebar;
+    }
+    
+    .data {
+        grid-area: data;
+        background-color: rgb(246, 249, 252);
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 8% auto;
+        grid-template-areas:
+            " . "
+            "content"
+    }
+    
+    .line {
+        border-bottom: 1px forestgreen dashed;
+        display: flex;
+        align-items: center;
+        font-style: italic;
+        font-size: larger;
+        justify-content: center;
+        font-weight: 600;
+    }
+    
+    
+    .content {
+        grid-area: content;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .product {
+        height: 50%;
+        width: 48%;
+        margin: 4% 0;
+    }
+    
+    .image {
+        height: 60%;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .image img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        transition: all .5s;
+        position: absolute;
+    
+    }
+    
+    .name {
+        height: 14%;
+        width: 100%;
+        background-color: ghostwhite;
+        font-weight: bolder;
+        font-size: 100%;
+        overflow: hidden;
+    }
+    
+    .discription {
+        height: 28%;
+        width: 100%;
+        border-top: 1px dashed forestgreen;
+        font-size: 80%;
+        overflow: hidden;
+    }
+
+    .product_btn {
+        font-size: small;
+        background-color: forestgreen;
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    
+    .footer {
+        grid-area: footer;
+        border-top: 1px solid forestgreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+            "site_btns Social"
+    
+    }
+    
+    .site_btns {
+        grid-area: site_btns;
+        display: flex;
+        height: 100%;
+        margin: -1% 0 0 0;
+    }
+    
+    .Social {
+        grid-area: Social;
+        display: flex;
+        height: 100%;
+        margin: -3% 0 0 0;
+    }
+    
+    #buttons_footer {
+        height: 50%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: aliceblue;
+        border-radius: 20px;
+
+    }
+    
+    #buttons_footer button {
+        border: none;
+        background: transparent;
+        border: 1px dashed forestgreen;
+        
+    }
+    
+    #buttons_footer a {
+        color: forestgreen;
+        font-size: 105%;
+        text-decoration: none;
+        width: 100px;
+
+    }
+    
+
+
+  }
