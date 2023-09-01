@@ -199,11 +199,11 @@ body {
 }
 
 .product_btn {
-    font-size: 1rem;
+    font-size: .70rem;
     background-color: forestgreen;
     color: white;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
 
 }
